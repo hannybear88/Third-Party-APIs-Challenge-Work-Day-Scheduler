@@ -24,7 +24,7 @@ var userInput;
 var hourSpan;
 // var hourString = $(".hour").text().split(" ");
 
-// Date and Hour
+// Date, Day of the week and Exact time of the day
 
 var interval = setInterval(function() {
   var momentNow = moment();
@@ -61,25 +61,25 @@ function initPage() {
   var init12 = JSON.parse(localStorage.getItem("12:00 pm"))
   twelvePm.val(init12);
   
-  var init13 = JSON.parse(localStorage.getItem("13:00 pm"))
+  var init13 = JSON.parse(localStorage.getItem("01:00 pm"))
   onePm.val(init13);
   
-  var init14 = JSON.parse(localStorage.getItem("14:00 pm"))
+  var init14 = JSON.parse(localStorage.getItem("02:00 pm"))
   twoPm.val(init14);
   
-  var init15 = JSON.parse(localStorage.getItem("15:00 pm"))
+  var init15 = JSON.parse(localStorage.getItem("03:00 pm"))
   threePm.val(init15);
  
-  var init16 = JSON.parse(localStorage.getItem("16:00 pm"))
+  var init16 = JSON.parse(localStorage.getItem("04:00 pm"))
   fourPm.val(init16);
   
-  var init17 = JSON.parse(localStorage.getItem("17:00 pm"))
+  var init17 = JSON.parse(localStorage.getItem("05:00 pm"))
   fivePm.val(init17);
   
-  var init18 = JSON.parse(localStorage.getItem("18:00 pm"))
+  var init18 = JSON.parse(localStorage.getItem("06:00 pm"))
   sixPm.val(init18);
   
-  var init19 = JSON.parse(localStorage.getItem("19:00 pm"))
+  var init19 = JSON.parse(localStorage.getItem("07:00 pm"))
   sevenPm.val(init19);
 } 
 
@@ -105,24 +105,25 @@ $(document).ready(function(){
   initPage()
   background()
 
-  // Buttons (save to Local Storage)
+  // Save Button for specific tine slot 
   $(".saveBtn").on("click", function(){
     userInput = $(this).siblings(".form-control").val().trim();
     console.log(userInput);
     hourSpan = $(this).siblings(".input-group-prepend").text().trim();
     console.log(hourSpan);
-    localStorage.setItem(hourSpan, JSON.stringify(''));
-    // localStorage.setItem(hourSpan, JSON.stringify(userInput));
+    localStorage.setItem(hourSpan, JSON.stringify(userInput));
 
   })
 
+  //Delete button for specitfic time slot
   $(".deleteBtn").click(function() {
     userInput = $(this).siblings(".form-control").val().trim();
     console.log(userInput);
     hourSpan = $(this).siblings(".input-group-prepend").text().trim();
     console.log(hourSpan);
     localStorage.setItem(hourSpan, JSON.stringify(''));
-    // localStorage.setItem(hourSpan, JSON.stringify(userInput));
+    location.reload()
+   
 
     // colorChange ();
     // renderText ();
@@ -132,7 +133,7 @@ $(document).ready(function(){
     
 
 
-  
+
   // Button for clear the day
   $("#clearDay").on("click", function(){
     localStorage.clear();
