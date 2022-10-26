@@ -3,10 +3,10 @@ var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY")
 var currentHour = moment().format('h:mm:ss a');
 
 // Text hour var
-var nineAm = $("#5am");
-var tenAm = $("#6am");
-var elevenAm = $("#7am");
-var twelvePm = $("#8am");
+var fiveAm = $("#5am");
+var sixAm = $("#6am");
+var sevenAm = $("#7am");
+var eightAm = $("#8am");
 var nineAm = $("#9am");
 var tenAm = $("#10am");
 var elevenAm = $("#11am");
@@ -24,7 +24,8 @@ var userInput;
 var hourSpan;
 // var hourString = $(".hour").text().split(" ");
 
-// Date and Time
+// Date and Hour
+
 var interval = setInterval(function() {
   var momentNow = moment();
   $('#currentDay').html(momentNow.format('YYYY MMMM DD') + ' '
@@ -33,7 +34,6 @@ var interval = setInterval(function() {
   $('#currentDay').html(currentDate + " " + momentNow.format('hh:mm:ss A'));
 }, 100);
 
-// TIme slots
 function initPage() {
 
   console.log("Current Hour " + hour);
@@ -61,26 +61,26 @@ function initPage() {
   var init12 = JSON.parse(localStorage.getItem("12:00 pm"))
   twelvePm.val(init12);
   
-  var init1 = JSON.parse(localStorage.getItem("01:00 pm"))
-  onePm.val(init1);
+  var init13 = JSON.parse(localStorage.getItem("13:00 pm"))
+  onePm.val(init13);
   
-  var init2 = JSON.parse(localStorage.getItem("02:00 pm"))
-  twoPm.val(init2);
+  var init14 = JSON.parse(localStorage.getItem("14:00 pm"))
+  twoPm.val(init14);
   
-  var init3 = JSON.parse(localStorage.getItem("03:00 pm"))
-  threePm.val(init3);
+  var init15 = JSON.parse(localStorage.getItem("15:00 pm"))
+  threePm.val(init15);
  
-  var init4 = JSON.parse(localStorage.getItem("04:00 pm"))
-  fourPm.val(init4);
+  var init16 = JSON.parse(localStorage.getItem("16:00 pm"))
+  fourPm.val(init16);
   
-  var init5 = JSON.parse(localStorage.getItem("05:00 pm"))
-  fivePm.val(init5);
+  var init17 = JSON.parse(localStorage.getItem("17:00 pm"))
+  fivePm.val(init17);
   
-  var init6 = JSON.parse(localStorage.getItem("06:00 pm"))
-  sixPm.val(init6);
+  var init18 = JSON.parse(localStorage.getItem("18:00 pm"))
+  sixPm.val(init18);
   
-  var init7 = JSON.parse(localStorage.getItem("07:00 pm"))
-  sevenPm.val(init7);
+  var init19 = JSON.parse(localStorage.getItem("19:00 pm"))
+  sevenPm.val(init19);
 } 
 
 function background () {
@@ -90,7 +90,6 @@ function background () {
       hour = parseInt(hour);
       console.log(timeTest);
       console.log(hour);
-
 //      console.log(this);
       if (hour > timeTest) {
           $(this).addClass("past");
@@ -106,7 +105,7 @@ $(document).ready(function(){
   initPage()
   background()
 
-  // Save Button which saves to local storage
+  // Buttons (save to Local Storage)
   $(".saveBtn").on("click", function(){
     userInput = $(this).siblings(".form-control").val().trim();
     console.log(userInput);
@@ -116,7 +115,23 @@ $(document).ready(function(){
 
   })
 
-  // Clear Day Button
+  $(".deleteBtn").click(function() {
+    userInput = $(this).siblings(".form-control").val().trim();
+    console.log(userInput);
+    hourSpan = $(this).siblings(".input-group-prepend").text().trim();
+    console.log(hourSpan);
+    localStorage.setItem(hourSpan, JSON.stringify(userInput));
+
+    colorChange ();
+    renderText ();
+    
+    });
+
+    
+
+
+  
+  // Button for clear the day
   $("#clearDay").on("click", function(){
     localStorage.clear();
     initPage()
