@@ -6,7 +6,7 @@ Homework Challenge #5
 
 ## Project Description
 
- My live page can be seen in the <a href="#Table of Contents">Table of Contents</a> section.The HTML and CSS codes were all already provided by UCSD Coding Bootcamp. They had already added a media query to make it user friendly for those who choose to use the "replace with correct deployed application" on either a mobile and/or tablet. You can <a href=hhttps://github.com/hannybear88/Third-Party-APIs-Challenge-Work-Day-Scheduler/>Click here</a> to see my code for this project. 
+ My live page can be seen in the <a href="#Table of Contents">Table of Contents</a> section.JS Code was created by me. The HTML and CSS codes were all already provided by UCSD Coding Bootcamp. They had already added a media query to make it user friendly for those who choose to use the "replace with correct deployed application" on either a mobile and/or tablet. You can <a href=hhttps://github.com/hannybear88/Third-Party-APIs-Challenge-Work-Day-Scheduler/>Click here</a> to see my code for this project. 
 
 ## Table of Contents
 <nav>
@@ -72,11 +72,13 @@ THEN the saved events persist
 ## Credits
 <ul>
     <li>Code refactored by Hannah Chung</li>
-    <li>index.html, style.css, and script.js starter codes provided by UCSD Coding Bootcamp</li>
+      <li>JS Code by Hannah Chung</li>
+    <li>index.html and style.css, starter codes provided by UCSD Coding Bootcamp</li>
 </ul>
 
 ## Contributors
 <ul>
     <li>Code refactored by Hannah Chung</li>
-    <li>index.html, style.css, and script.js starter codes provided by UCSD Coding Bootcamp</li>
+    <li>JS Code by Hannah Chung</li>
+    <li>index.html and style.css, and starter codes provided by UCSD Coding Bootcamp</li>
 </ul>
