@@ -38,16 +38,16 @@ function initPage() {
 
   console.log("Current Hour " + hour);
   var init5 = JSON.parse(localStorage.getItem("05:00 am"));
-  nineAm.val(init5);
+  fiveAm.val(init5);
 
   var init6 = JSON.parse(localStorage.getItem("06:00 am"));
-  nineAm.val(init6);
+  sixAm.val(init6);
 
   var init7 = JSON.parse(localStorage.getItem("07:00 am"));
-  nineAm.val(init7);
+  sevenAm.val(init7);
 
   var init8 = JSON.parse(localStorage.getItem("08:00 am"));
-  nineAm.val(init8);
+  eightAm.val(init8);
 
   var init9 = JSON.parse(localStorage.getItem("09:00 am"));
   nineAm.val(init9);
@@ -111,7 +111,8 @@ $(document).ready(function(){
     console.log(userInput);
     hourSpan = $(this).siblings(".input-group-prepend").text().trim();
     console.log(hourSpan);
-    localStorage.setItem(hourSpan, JSON.stringify(userInput));
+    localStorage.setItem(hourSpan, JSON.stringify(''));
+    // localStorage.setItem(hourSpan, JSON.stringify(userInput));
 
   })
 
@@ -120,10 +121,11 @@ $(document).ready(function(){
     console.log(userInput);
     hourSpan = $(this).siblings(".input-group-prepend").text().trim();
     console.log(hourSpan);
-    localStorage.setItem(hourSpan, JSON.stringify(userInput));
+    localStorage.setItem(hourSpan, JSON.stringify(''));
+    // localStorage.setItem(hourSpan, JSON.stringify(userInput));
 
-    colorChange ();
-    renderText ();
+    // colorChange ();
+    // renderText ();
     
     });
 
