@@ -27,11 +27,6 @@ Installation is not required, unless you plan on refactoring the code. Please <a
 <!--replace with workday schedule deployed application -->
 to be directed straight to the deployed application
 
-<!--repace with screenshot of workday schedule-->
-<img src="./assets/images/JavaScript-Challenge-Password-Generator-Screenshot.png" /> 
-
-## Support
-If you need extra support feel free to <a href="mailto:hannahkchung88@gmail.com">email me</a>
 
 
 AS AN employee with a busy schedule
@@ -67,6 +62,15 @@ THEN the saved events persist
 
 
 <!--add gif of workday schedule-->
+
+
+
+<!--repace with screenshot of workday schedule-->
+<img src="./assets/images/JavaScript-Challenge-Password-Generator-Screenshot.png" /> 
+
+## Support
+If you need extra support feel free to <a href="mailto:hannahkchung88@gmail.com">email me</a>
+
 
 
 ## Credits

@@ -2,6 +2,12 @@
 var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a');
 
+
+// // Date picker
+// $('#event_period').datepicker({
+//   inputs: $('.actual_range')
+// });
+
 // Text hour var
 var fiveAm = $("#5am");
 var sixAm = $("#6am");
@@ -90,6 +96,7 @@ function background () {
       hour = parseInt(hour);
       console.log(timeTest);
       console.log(hour);
+
 //      console.log(this);
       if (hour > timeTest) {
           $(this).addClass("past");
@@ -105,7 +112,7 @@ $(document).ready(function(){
   initPage()
   background()
 
-  // Save Button for specific tine slot 
+  // Save Button for specific tinme slot 
   $(".saveBtn").on("click", function(){
     userInput = $(this).siblings(".form-control").val().trim();
     console.log(userInput);
