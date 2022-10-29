@@ -6,14 +6,16 @@ Homework Challenge #5
 
 ## Project Description
 
-For this assignment we had to create a work day scheduler. We had to make sure that there are timeblocks for the day and that the time, day, and date shows at the top. We had to make sure that the time blocks show the past, present, and future. The past shows as gray, present as red, and future shows as green. When the user clicks on the time slot it wold turn white then they would write their schedule for the timeslot(s). When they click out of it it would go back to gray then the user would have to save. When the user clicks refresh then their schedule for the timeslot(s) would persist. They can also click on clear day to completely clear out their schedule for the day. I had also added extra hours to the day just in case the user has meetings and other work related schedules before 9AM. I had also added a delete button to make it easier for the user just in case they had accidentally added the schedule for the wrong time or if there was a cancellation or change in time for the original schedule time. My live page can be seen in the <a href="#Table of Contents">Table of Contents</a> section.JS Code was created by me. The HTML and CSS codes were all already provided by UCSD Coding Bootcamp. They had already added a media query to make it user friendly for those who choose to use the "replace with correct deployed application" on either a mobile and/or tablet. You can <a href=hhttps://github.com/hannybear88/Third-Party-APIs-Challenge-Work-Day-Scheduler/>Click here</a> to see my code for this project. 
+For this assignment we had to create a work day scheduler. We had to make sure that there are timeblocks for the day and that the time, day, and date shows at the top. We had to make sure that the time blocks show the past, present, and future. The past shows as gray, present as red, and future shows as green. When the user clicks on the time slot it would turn white then they would write their schedule for the timeslot(s). When they click out of it it would go back to gray then the user would have to save. When the user clicks refresh then their schedule for the timeslot(s) would persist. They can also click on clear day to completely clear out their schedule for the day. I had also added extra hours to the day just in case the user has meetings and other work related schedules before 9AM. I had also added a delete button to make it easier for the user just in case they had accidentally added the schedule for the wrong time or if there was a cancellation or change in time for the original schedule time. My live page can be seen in the <a href="#Table of Contents">Table of Contents</a> section.JS Code was created by me. The HTML and CSS codes were all already provided by UCSD Coding Bootcamp. They had already added a media query to make it user friendly for those who choose to use the "replace with correct deployed application" on either a mobile and/or tablet. You can <a href=hhttps://github.com/hannybear88/Third-Party-APIs-Challenge-Work-Day-Scheduler/>Click here</a> to see my code for this project. 
 
 ## Table of Contents
 <nav>
     <ol>
-        <li><a href="#Installation">How to Use this Project</a></li>
-         <li><a href="#How to Use this Project">How to Use this Project</a></li>
-          <li><a href="#Features">How to Use this Project</a></li>
+        <li><a href="#Installation">Installation</a></li>
+        <li><a href="User Story">User Story</a></li>
+         <li><a href="#How to Use this Projec and Acceptance Criteria">How to Use this Project and Acceptance Criteria</a></li>
+         <li><a href="Demo">Demo</a></li>
+          <li><a href="#Features">Features</a></li>
         <li><a href="#Support">Support</a></li>
         <li><a href="#Credits">Credits</a></li>
         <li><a href="#Contributors">Contributors</a></li>
@@ -22,28 +24,28 @@ For this assignment we had to create a work day scheduler. We had to make sure t
 
 ## Installation
 
-Installation is not required, unless you plan on refactoring the code. Please <a href="mailto:hannahkchung88@gmail.com">email me</a> to make sure this is okay. 
+Installation is not required, unless you plan on cloning to refactor the code. Please <a href="mailto:hannahkchung88@gmail.com">email me</a> to make sure this is okay. 
 
-## How to Use the Project
-
-<!--replace with workday schedule deployed application -->
-to be directed straight to the deployed application
-
-
+## User Story
 
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 
+## How to Use the Project
+
+<a href=https://hannybear88.github.io/Third-Party-APIs-Challenge-Work-Day-Scheduler/>Click here</a> to be directed straight to the deployed application
+
+
 
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
+<!-- THEN the current day is displayed at the top of the calendar -->
 <img src="./assets/images/Work-Day-Current-Day.png" />
 
 WHEN I scroll down
 THEN I am presented with time blocks for standard business hours
-
+<img src="./assets/images/Work-Day-Timeblocks-Shown.png" />
 
 
 WHEN I view the time blocks for that day
@@ -67,20 +69,29 @@ THEN I can enter an event
 <img src="./assets/images/User-Entered-Schedule-in-Timeblock.png" />
 
 WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
 <img src="./assets/images/User-Clicks-Save-to-Save-Their-Schedule-of-the-Day.png" />
 
-WHEN I refresh the page
-THEN the saved events persist
+THEN the text for that event is saved in local storage
 <img src="./assets/images/User-Saves-Their-Schedule-of-Their-Day.png" />
 
 
+WHEN I refresh the page
+THEN the saved events persist
+<img src="./assets/images/User-Schedule-of-Their-Day-Saves-Persists-After-Refresh.png" />
+<img src="./assets/images/Schedule-Persists-After-Clicking-Refresh.gif"/>
+
+## Challenges
+This assignment was a challenging. I'm not used to using JQuery, Moment.js, and Bootstrap. It is definitely easier than Vanilla Javascript. Even though this assignment was challenging, it was quite enjoyable because I do like having a planner and writing things down that I need to do and plans and future events, so that I don't forget and I don't double book on making plans or make plans on a day I have an event I am attending. I'd like to eventually challenge myself on this project by adding future dates, so that the user is not limited to one day and waiting til 12:00AM to plan their event for the next day. I'd like for the user to have the freedom by not having a limit on planning their days and events.
+
+## Success
+I feel like I did well on this assignment by suceeding on the requirements on the assignment. I had added extra features to challenge myself which I like to do. 
 
 
 
+## Demo
 
-<!--repace with screenshot of workday schedule-->
-<img src="./assets/images/HW4_main_page_screenshot.png" />
+WORK DAY SCHEDULER SCREENSHOT
+<img src="./assets/images/Work-Day-Schedule-Screenshot.png" />
 
 
 ## Features
