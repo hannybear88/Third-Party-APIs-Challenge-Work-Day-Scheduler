@@ -13,7 +13,9 @@ For this assignment we had to create a work day scheduler. We had to make sure t
     <ol>
         <li><a href="#Installation">Installation</a></li>
         <li><a href="User Story">User Story</a></li>
-         <li><a href="#How to Use this Projec and Acceptance Criteria">How to Use this Project and Acceptance Criteria</a></li>
+         <li><a href="#How to Use this Project and Acceptance Criteria">How to Use this Project and Acceptance Criteria</a></li>
+          <li><a href="#Challenges">Challenges</a></li>
+        <li><a href="#Success">Success</a></li>
          <li><a href="Demo">Demo</a></li>
           <li><a href="#Features">Features</a></li>
         <li><a href="#Support">Support</a></li>
@@ -32,7 +34,7 @@ AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 
-## How to Use the Project
+## How to Use the Project and Acceptance Criteria
 
 <a href=https://hannybear88.github.io/Third-Party-APIs-Challenge-Work-Day-Scheduler/>Click here</a> to be directed straight to the deployed application
 
