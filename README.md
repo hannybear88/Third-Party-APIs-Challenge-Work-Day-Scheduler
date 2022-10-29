@@ -43,8 +43,8 @@ SO THAT I can manage my time effectively
 
 
 GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-<!-- THEN the current day is displayed at the top of the calendar -->
+WHEN I open the planner<br>
+THEN the current day is displayed at the top of the calendar
 <img src="./assets/images/Work-Day-Current-Day.png" />
 
 WHEN I scroll down
